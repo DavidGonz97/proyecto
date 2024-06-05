@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+.container-section {
+    background-image: url('../imagenes/fondo-formulario-servicios.jpg');
+    background-size: cover; 
+    background-position: center;
+    padding: 50px 20px; 
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 80vh;
+}
+
+section.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.message-done,
+.message-error {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.message-done {
+    color:#007bff;
+}
+
+.message-error {
+    color:#007bff;
+}
+
+/* Responsive Styles */
+@media (max-width: 1300px) {
+    .container {
+        max-width: 1000px;
+    }
+    .container-section {
+        padding: 30px 20px;
+        display: flex;
+        align-items: start;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1000px;
+    }
+    .container-section {
+        padding: 30px 20px;
+        display: flex;
+        align-items: start;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .container-section {
+        padding: 30px 20px;
+        display: flex;
+        align-items: start;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .container-section {
+        padding: 30px 20px;
+        display: flex;
+        align-items: start;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container-section {
+        padding: 30px 20px;
+        display: flex;
+        align-items: start;
+    }
+
+    section.container {
+        padding: 10px;
+        
+    }
+
+    input[type="date"],
+    select,
+    input[type="submit"] {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 991px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        padding: 30px auto;
+        flex-direction: column;
+    }
+    
+    form {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .link ul {
+        flex-direction: column;
+    }
+
+    .link ul li {
+        margin: 0 0 15px 0;
+    }
+}
+
+/* Ensure the form is fully visible */
+@media (max-width: 576px) {
+    .container-section {
+        padding: 20px;
+    }
+
+    section.container {
+        margin: 10px 0;
+    }
+
+    input[type="date"],
+    select,
+    input[type="submit"] {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+    .container-section {
+        padding: 30px 20px;
+        display: flex;
+        align-items: start;
+        
+    }
+
+    section.container {
+        max-height: 450px;
+        margin-top: -8%;
+        z-index: 999;
+    }
+
+    input[type="date"],
+    select,
+    input[type="submit"] {
+        padding: 5px;
+    }
+}

@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+/* NOSOTROS */
+
+.about {
+    background-color: #fafafa;
+    padding: 150px 0 100px 0;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.about-img {
+    width: 50%;
+}
+
+.about-img img {
+    width: 500px;
+    border-radius: 15px;
+    float: right;
+    margin-right: 10%;
+}
+
+.about-txt {
+    width: 50%;
+    margin-left: 25px;
+}
+
+.about-txt h2{
+    color: #323232;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.about-txt p{
+    font-size: 16px;
+    color: #818181;
+}
+
+
+/* SERVICIOS */
+
+.servicios {
+    padding: 50px 0 100px 0;
+    text-align: center;
+}
+
+.servicios h2 {
+    color:#323232;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.servicios-content {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicio-1 {
+    padding: 25px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.1);
+    flex-basis: calc(25% - 20px);
+}
+
+.servicio-1 i{
+    font-size: 30px;
+    color:#02b1f4;
+    margin-bottom: 15px;
+}
+
+.servicio-1 h3 {
+    font-size: 20px;
+    color: #323232;
+    text-transform: capitalize;
+}
+
+.servicios .btn-1 {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: #02b1f4;
+    color: #ffffff;
+    border-radius: 15px;
+    margin-top: 3%; 
+    text-decoration: none; 
+}
+
+
+
+/* FORMULARIO */
+
+.formulario {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    padding: 50px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+}
+
+form h2 {
+    font-size: 25px;
+    color: #323232;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.imput-container {
+    position: relative;
+}
+
+.imput-container > i {
+    padding: 14px;
+    border-radius: 50%;
+    background-color: #02b1f4;
+    color: #ffffff;
+    position: absolute;
+    font-size: 20px;
+    top: 4px;
+    left: 10px;
+}
+
+.imput-container > input, textarea {
+    padding: 17px 15px 17px 65px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 35px;
+    background-color: transparent;
+    border: 2px solid #02b1f4;
+    font-size: 16px;
+    outline: none;
+    color: #323232;
+}
+
+textarea {
+    font-family: "Poppins", sans-serif;
+    height: 150px;
+    max-width: 100%;
+    min-width: 78%;
+    max-height: 200px;
+    min-height: 150px;
+}
+
+::placeholder {
+    color: #a0a0a0;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #02b1f4;
+    padding: 17px 30px;
+    width: 100%;
+    border: 0;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* CSS PÁGINA SERVICIOS */
+
+.services {
+    min-width: 100%;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.text-specialist {
+    max-width: 70%;   
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 5%;   
+}
+
+.row{
+    max-width: 50%;
+}
+
+.row-1{
+    max-width: 50%;
+}
+
+
+.text-specialist h2{
+    width: 70%;
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+
+.list-services {
+    overflow: hidden;
+    display: flex;
+    width: 60%;
+    margin-top: 2%;
+    height: 10%;
+    margin-left: 2%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin-right: 5%;
+}
+
+.row-1 .list-services {
+    float: right;
+}
+
+
+.list-services:hover {
+    transform: translateY(-4%);
+}
+
+
+.list-services img {
+    width: 40%;
+}
+
+.text-specialist .btn-1{
+    border: none;
+    width: 50%;
+    height: 18%;
+    border-radius: 2px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.text-specialist .btn-1-noLogin{
+    padding: 11px 25px;
+    background-color: #02b1f4;
+    color: #ffffff;
+    margin-top: 20px; 
+    text-decoration: none;
+    border: none;
+    width: 50%;
+    height: 23%;
+    border-radius: 2px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+/* Panel de administrador */
+/* Panel de administrador */
+.panel_admin {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centrar inicialmente */
+    padding: 20px;
+}
+
+/* Estilos para los contenedores de información */
+.admin-info {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+/* Estilos para los botones del panel de administrador */
+.panel_admin button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 10%;
+}
+
+.panel_admin button:hover {
+    background-color: #45a049; /* Verde más oscuro */
+}
+
+/* Estilos para los formularios */
+.form-admin {
+    width: 80%;
+    transition: transform 0.3s; /* Añadir transición para el desplazamiento */
+}
+
+.form-admin.form-visible {
+    transform: translateX(-100%); /* Desplazar a la izquierda */
+}
+
+.form-admin form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centrar elementos verticalmente */
+    margin-left: 10%;
+}
+
+.form-admin h2 {
+    margin-bottom: 10px;
+}
+
+.form-admin label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-admin input[type="number"],
+.form-admin textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-admin input[type="submit"] {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-admin input[type="submit"]:hover {
+    background-color: #000000; 
+}
+
+/* Estilos para los botones fuera de los formularios */
+.panel_admin .outer-button {
+    background-color: #008CBA; /* Azul */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.panel_admin .outer-button:hover {
+    background-color: #005f6b; /* Azul más oscuro */
+}
+
+
+
+
+ /* RESPONSIVE */ 
+
+ @media (max-width: 1300px) {
+    
+    .about {     
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .about-img {
+        width: 80%;
+        order: 2;
+        margin: 0 auto;
+    }
+
+    .about-img img {
+        width: 100%;
+        float: none;
+    }
+
+    .about-txt {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .servicios { 
+        padding: 30px;
+    }
+
+    .servicios-content {
+        margin-top: 25px;
+        flex-direction: column;
+    }
+
+    .servicio-1 {
+        margin-bottom: 20px;
+    }
+
+    .panel_admin {
+        flex-direction: column; /* Cambiar a columna en pantallas más pequeñas */
+        align-items: center; /* Centrar elementos horizontalmente */
+    }
+
+    .admin-info,
+    .form-admin {
+        width: 100%; /* Ajustar el ancho al 100% en pantallas más pequeñas */
+    }
+
+    .form-admin {
+        margin-left: -35px; /* Eliminar el margen izquierdo en pantallas más pequeñas */
+    }
+
+    /* Apartado de Servicios */
+
+    .services.container {
+        min-width: 100%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+    }
+
+    .row-1 {
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+    }
+
+    .services .list-services {
+        min-width: 100%;
+    }
+
+    .text-specialist .btn-1-noLogin{
+        max-height: 25%;
+    }
+
+    .formulario {
+        padding: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    form {
+        width: 100%;
+    }   
+}
+
+@media (max-width: 850px){
+    .form-admin.container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .form-admin.container form {
+        min-width: 100%;
+    }
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 767px) and (min-width: 480px) {
+    .row, .row-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services .list-services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-specialist .btn-1-noLogin {
+        width: 100%;
+        height: auto;
+        font-size: 14px; /* Ajustamos el tamaño del texto */
+        padding: 8px;
+        margin-bottom: 3px;
+    }
+
+    .text-specialist .btn-1 {
+        width: 100%;
+        height: auto;
+        font-size: 14px; /* Ajustamos el tamaño del texto */
+        padding: 8px;
+        margin-bottom: 3px;
+    }
+
+    .form-admin.container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .form-admin.container form {
+        min-width: 100%;
+    }
+}
+
+/* Pantallas extra pequeñas */
+@media (max-width: 479px) {
+    .row, .row-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services .list-services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .text-specialist .btn-1-noLogin {
+        width: 100%;
+        height: auto;
+        font-size: 12px; /* Ajustamos el tamaño del texto para pantallas más pequeñas */
+        padding: 6px; /* Ajustamos el padding */
+        margin-bottom: 3px;
+    }
+    .text-specialist .btn-1 {
+        width: 100%;
+        height: auto;
+        font-size: 12px; /* Ajustamos el tamaño del texto para pantallas más pequeñas */
+        padding: 6px; /* Ajustamos el padding */
+        margin-bottom: 3px;
+    }
+}
+
+
+
+

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container-section {
+    background-image: url('../imagenes/fondo-formulario-servicios.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row; /* Inicialmente en fila */
+    justify-content: center;
+    align-items: center;
+    max-height: 80vh;
+    position: relative;
+    overflow-y: auto; /* Añadido para permitir desplazamiento vertical */
+}
+
+section.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px; /* Ajustado para separación entre formularios */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.form-add-services.container,
+.form-delete-services.container {
+    margin-right: 0;
+}
+
+select#servicio,
+select#nombreServicio {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+}
+
+select#servicio:hover, 
+select#nombreServicio:hover {
+    border-color: #888;
+}
+
+select#servicio:focus, 
+select#nombreServicio:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 86, 179, 0.4);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea,
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+    max-height: 170px;
+    min-height: 140px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1300px) {
+    .container {
+        max-width: 90%;
+    }
+    .container-section {
+        padding: 40px 20px;
+    }
+    section.container {
+        max-width: 500px;
+        margin: 10px; /* Ajustado para separación entre formularios */
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .container-section {
+        padding: 30px 15px;
+        flex-direction: column; /* Cambiado a columna para pantallas pequeñas */
+        align-items: center;
+    }
+    section.container {
+        max-width: 100%;
+        margin: 10px 0; /* Espaciado entre formularios */
+        padding: 15px;
+    }
+    select#servicio,
+    select#nombreServicio {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    .container-section {
+        padding: 20px 10px;
+        flex-direction: column; /* Para que se apilen verticalmente */
+        justify-content: flex-start;
+    }
+    section.container {
+        padding: 15px;
+        margin: 10px 0;
+        box-shadow: none; /* Ajuste para evitar que la sombra se corte */
+    }
+    textarea {
+        height: 120px;
+    }
+    input[type="submit"] {
+        padding: 8px;
+    }
+}
