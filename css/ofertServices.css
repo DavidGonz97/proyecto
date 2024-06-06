@@ -31,18 +31,18 @@ body {
     padding: 50px 20px;
     flex-grow: 1;
     display: flex;
-    flex-direction: row; /* Inicialmente en fila */
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     max-height: 80vh;
     position: relative;
-    overflow-y: auto; /* Añadido para permitir desplazamiento vertical */
+    overflow-y: auto; 
 }
 
 section.container {
     width: 100%;
     max-width: 600px;
-    margin: 20px; /* Ajustado para separación entre formularios */
+    margin: 20px; 
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -136,7 +136,7 @@ input[type="submit"]:hover {
     }
     section.container {
         max-width: 500px;
-        margin: 10px; /* Ajustado para separación entre formularios */
+        margin: 10px;
     }
 }
 
@@ -146,12 +146,12 @@ input[type="submit"]:hover {
     }
     .container-section {
         padding: 30px 15px;
-        flex-direction: column; /* Cambiado a columna para pantallas pequeñas */
+        flex-direction: column;
         align-items: center;
     }
     section.container {
         max-width: 100%;
-        margin: 10px 0; /* Espaciado entre formularios */
+        margin: 10px 0; 
         padding: 15px;
     }
     select#servicio,
@@ -166,13 +166,13 @@ input[type="submit"]:hover {
     }
     .container-section {
         padding: 20px 10px;
-        flex-direction: column; /* Para que se apilen verticalmente */
+        flex-direction: column; 
         justify-content: flex-start;
     }
     section.container {
         padding: 15px;
         margin: 10px 0;
-        box-shadow: none; /* Ajuste para evitar que la sombra se corte */
+        box-shadow: none; 
     }
     textarea {
         height: 120px;
