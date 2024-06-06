@@ -2,7 +2,7 @@
 .footer {
     padding: 50px;
     background-color: #fafafa;
-    width: 100vw; /* Cambia '100%' por '100vw' */
+    width: 100vw; 
     position: absolute;
     bottom: 0;
 }
@@ -38,7 +38,6 @@
     color: #02b1f4;
 }
 
-/* Responsive adjustments for smaller screens */
 @media (max-width: 1300px) {
     .footer {
         padding: 40px;
