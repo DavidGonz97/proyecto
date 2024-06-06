@@ -92,6 +92,7 @@
 @media (max-width: 480px) {
     .footer {
         padding: 20px;
+        position: relative;
     }
 
     .footer-content {
