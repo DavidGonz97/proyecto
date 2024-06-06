@@ -26,7 +26,7 @@
     font-size: 16px;
     padding: 10px 10px; 
     display: block;
-    white-space: nowrap; /* Previene que el texto se divida en múltiples líneas */
+    white-space: nowrap;
 }
 
 .navbar .session-menu .modal-icon ul {
@@ -457,13 +457,13 @@ body.modal-open::before {
     }
 
     .menu .navbar ul li a {
-        color: #000; /* Cambiado */
-        font-weight: bold; /* Añadido */
-        text-decoration: none; /* Añadido */
+        color: #000; 
+        font-weight: bold; 
+        text-decoration: none; 
     }
 
     .menu .navbar ul li a:hover {
-        color: #02b1f4; /* Cambiado */
+        color: #02b1f4; 
     }
 
     .header {
@@ -517,7 +517,7 @@ body.modal-open::before {
     }
 
     .container-login-register {
-        display: block; /* Cambiado a bloque */
+        display: block; 
         width: 100%;
         max-width: 400px;
         position: relative;
@@ -527,7 +527,7 @@ body.modal-open::before {
     }
     
     .container-login-register form {
-        width: calc(100% - 40px); /* Calcula el ancho para dejar espacio para los márgenes */
+        width: calc(100% - 40px); 
         padding: 20px;
         background: #fff;
         position: absolute;
