@@ -272,11 +272,10 @@ textarea {
 
 
 /* Panel de administrador */
-/* Panel de administrador */
 .panel_admin {
     display: flex;
     flex-direction: row;
-    justify-content: center; /* Centrar inicialmente */
+    justify-content: center; 
     padding: 20px;
 }
 
