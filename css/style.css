@@ -355,23 +355,6 @@ textarea {
     background-color: #000000; 
 }
 
-/* Estilos para los botones fuera de los formularios */
-.panel_admin .outer-button {
-    background-color: #008CBA; 
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-bottom: 10px;
-}
-
-.panel_admin .outer-button:hover {
-    background-color: #005f6b; 
-}
-
-
-
 
  /* RESPONSIVE */ 
 
