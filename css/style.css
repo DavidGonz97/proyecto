@@ -343,7 +343,7 @@ textarea {
 }
 
 .form-admin input[type="submit"] {
-    background-color: #4CAF50; /* Verde */
+    background-color: #4CAF50; 
     color: white;
     padding: 10px 20px;
     border: none;
@@ -357,7 +357,7 @@ textarea {
 
 /* Estilos para los botones fuera de los formularios */
 .panel_admin .outer-button {
-    background-color: #008CBA; /* Azul */
+    background-color: #008CBA; 
     color: white;
     padding: 10px 20px;
     border: none;
