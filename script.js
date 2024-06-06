@@ -120,14 +120,4 @@ function toggleMenu() {
 // Función para hacer desaparecer el mensaje de registro confirmado u erroneo
 var mensajeContainer = document.getElementById('mensaje-container');
 
-// Verificar si el contenedor existe
-if (mensajeContainer) {
-    // Mostrar el mensaje
-    mensajeContainer.style.display = 'block';
-
-    // Desaparecer el mensaje después de 5 segundos (5000 milisegundos)
-    setTimeout(function() {
-        mensajeContainer.style.display = 'none';
-    }, 5000); // 5000 milisegundos = 5 segundos
-}
 
