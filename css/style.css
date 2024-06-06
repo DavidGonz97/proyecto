@@ -290,9 +290,9 @@ textarea {
     width: 80%;
 }
 
-/* Estilos para los botones del panel de administrador */
+
 .panel_admin button {
-    background-color: #4CAF50; /* Verde */
+    background-color: #4CAF50; 
     color: white;
     padding: 10px 20px;
     border: none;
@@ -303,24 +303,24 @@ textarea {
 }
 
 .panel_admin button:hover {
-    background-color: #45a049; /* Verde más oscuro */
+    background-color: #45a049; 
 }
 
 /* Estilos para los formularios */
 .form-admin {
     width: 80%;
-    transition: transform 0.3s; /* Añadir transición para el desplazamiento */
+    transition: transform 0.3s; 
 }
 
 .form-admin.form-visible {
-    transform: translateX(-100%); /* Desplazar a la izquierda */
+    transform: translateX(-100%); 
 }
 
 .form-admin form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Centrar elementos verticalmente */
+    align-items: center; 
     margin-left: 10%;
 }
 
@@ -368,7 +368,7 @@ textarea {
 }
 
 .panel_admin .outer-button:hover {
-    background-color: #005f6b; /* Azul más oscuro */
+    background-color: #005f6b; 
 }
 
 
@@ -415,17 +415,17 @@ textarea {
     }
 
     .panel_admin {
-        flex-direction: column; /* Cambiar a columna en pantallas más pequeñas */
-        align-items: center; /* Centrar elementos horizontalmente */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .admin-info,
     .form-admin {
-        width: 100%; /* Ajustar el ancho al 100% en pantallas más pequeñas */
+        width: 100%; 
     }
 
     .form-admin {
-        margin-left: -35px; /* Eliminar el margen izquierdo en pantallas más pequeñas */
+        margin-left: -35px; 
     }
 
     /* Apartado de Servicios */
@@ -498,7 +498,7 @@ textarea {
     .text-specialist .btn-1-noLogin {
         width: 100%;
         height: auto;
-        font-size: 14px; /* Ajustamos el tamaño del texto */
+        font-size: 14px; 
         padding: 8px;
         margin-bottom: 3px;
     }
@@ -506,7 +506,7 @@ textarea {
     .text-specialist .btn-1 {
         width: 100%;
         height: auto;
-        font-size: 14px; /* Ajustamos el tamaño del texto */
+        font-size: 14px; 
         padding: 8px;
         margin-bottom: 3px;
     }
@@ -539,15 +539,15 @@ textarea {
     .text-specialist .btn-1-noLogin {
         width: 100%;
         height: auto;
-        font-size: 12px; /* Ajustamos el tamaño del texto para pantallas más pequeñas */
-        padding: 6px; /* Ajustamos el padding */
+        font-size: 12px; 
+        padding: 6px; 
         margin-bottom: 3px;
     }
     .text-specialist .btn-1 {
         width: 100%;
         height: auto;
-        font-size: 12px; /* Ajustamos el tamaño del texto para pantallas más pequeñas */
-        padding: 6px; /* Ajustamos el padding */
+        font-size: 12px; 
+        padding: 6px; 
         margin-bottom: 3px;
     }
 }
